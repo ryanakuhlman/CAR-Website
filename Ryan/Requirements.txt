@@ -1,0 +1,25 @@
+COMMENTS:
+* fix user images in comments
+* add editing to comments
+* add dates and usernames(if possible)
+* add reply ability
+
+AUTHOR: 
+* make ability to edit
+* add picture
+* add social media links
+
+ARTICLES: 
+* make button for adding new blog
+* make format for making a new blog (see format blog)
+* make dates match to real time
+* add image capability
+
+FORMAT BLOG: 
+* add a title - required
+* add a quote - not required
+* add an image - not required
+* add paragraph - required
+* format it to where you could add as many different idems
+as you want with a plus button
+* make it simple to set up

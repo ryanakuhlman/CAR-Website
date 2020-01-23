@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="BlogSite.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Web Blog</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="../Home/BlogSite.html">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="../Author/BlogSite.html">Authors</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="../Favorites/BlogSite.html">Favorites</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="../Categories/BlogSite.html">Categories</a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Sample Page <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="../About Us/BlogSite.html">About Us</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Our Blog</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="mainContent">
+		<div class="leftSide">
+			<div class="card mainCard">
+				<p class="date">July 20, 2019</p>
+
+				<h2 class="articleTitle">Sample Article</h2>
+
+				<p class="quote" id="test"><strong>Quote</strong> - "Bacon ipsum dolor amet drumstick pork belly pig meatball burgdoggen jowl bacon, alcatra cupim turducken swine. Jowl drumstick shank ball tip kevin bresaola picanha fatback flank pig pork chop."</p>
+
+				<p><strong>Main Content</strong> - Salami chicken short ribs ribeye. Bresaola hamburger leberkas cupim filet mignon ribeye salami chicken flank short loin prosciutto doner pork belly. Jowl short loin t-bone ham hock, pastrami shank meatloaf cow buffalo beef fatback pancetta beef ribs tongue. Chicken doner venison pork chop flank. Hamburger flank jowl, buffalo boudin tail landjaeger shank burgdoggen. Bresaola sirloin kevin chicken, t-bone pork ham hock boudin flank tongue beef ribs.</p>
+
+				<p><strong>Main Content</strong> - Strip steak burgdoggen hamburger spare ribs buffalo beef ribs, ham hock cow andouille chicken pork chop tenderloin pork loin bresaola. Sirloin landjaeger andouille, bacon pig turducken pastrami hamburger flank buffalo salami tongue sausage drumstick strip steak. Picanha cupim shoulder pork belly. Tenderloin tongue meatball prosciutto spare ribs. Pork belly brisket cow tenderloin jowl leberkas alcatra strip steak. Kielbasa bacon ham hock, capicola andouille sausage sirloin hamburger. Ham bacon rump, pastrami burgdoggen meatball jerky.</p>
+			</div>
+
+			<div class="card mainCard">
+				<p class="date">July 21, 2019</p>
+
+				<h2 class="articleTitle">Another Sample Article</h2>
+
+				<p class="quote"><strong>Quote</strong> - "Bacon ipsum dolor amet drumstick pork belly pig meatball burgdoggen jowl bacon, alcatra cupim turducken swine. Jowl drumstick shank ball tip kevin bresaola picanha fatback flank pig pork chop."</p>
+
+				<p><strong>Main Content</strong> - Salami chicken short ribs ribeye. Bresaola hamburger leberkas cupim filet mignon ribeye salami chicken flank short loin prosciutto doner pork belly. Jowl short loin t-bone ham hock, pastrami shank meatloaf cow buffalo beef fatback pancetta beef ribs tongue. Chicken doner venison pork chop flank. Hamburger flank jowl, buffalo boudin tail landjaeger shank burgdoggen. Bresaola sirloin kevin chicken, t-bone pork ham hock boudin flank tongue beef ribs.</p>
+
+				<p><strong>Main Content</strong> - Strip steak burgdoggen hamburger spare ribs buffalo beef ribs, ham hock cow andouille chicken pork chop tenderloin pork loin bresaola. Sirloin landjaeger andouille, bacon pig turducken pastrami hamburger flank buffalo salami tongue sausage drumstick strip steak. Picanha cupim shoulder pork belly. Tenderloin tongue meatball prosciutto spare ribs. Pork belly brisket cow tenderloin jowl leberkas alcatra strip steak. Kielbasa bacon ham hock, capicola andouille sausage sirloin hamburger. Ham bacon rump, pastrami burgdoggen meatball jerky.</p>
+			</div>
+
+			<div class="card mainCard addCard">
+				<h5><i class="plus fas fa-plus"></i> Add Another Blog</h5>
+				<button id="myModal">Modal</button>
+			</div>
+
+			<div class="modal" tabindex="-1" role="dialog">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title">Modal title</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <p>Modal body text goes here.</p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+
+		<!-- end of leftSide -->
+
+		<div class="rightSide">
+			<div class="card author">
+				<h3>About the Author</h3>
+				<p>The author is 27 years old, born and raised in Brooklyn New York. Ever since he was 19 years old, he was going out making and sharing stories to people all around the world. He hopes that he could work for the big companies like CNN or ABC News, but for now, he is fine doing this.</p>
+			</div>
+
+			<div class="card publicComments">
+				<h3 class="addComment"><i class="plus fas fa-plus"></i> Add a Public Comment</h3>
+				<div class="containerTab" style="display: none;">
+					<textarea id="textArea" rows="3" cols="36" placeholder="type here..."></textarea>
+					<button type="button" onclick="postComment()" id="post" class="btn btn-block btn-primary">Post</button>
+					<button type="button" onclick="cancelComment()" id="cancel" class="btn btn-block btn-danger">Cancel</button>
+				</div>
+				<p type="text" id="showText"></p>
+				<i class="fas fa-user"></i><p>This article is great.</p>
+				<i class="fas fa-user"></i><p>Some things are a little unclear, but it is still okay.</p>
+				<i class="fas fa-user"></i><p>What is with the sample articles?</p>
+				<div class="userComment">
+					<i class="fas fa-user"></i><p>Hi</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="BlogSite.js"></script>
+	<script type="text/javascript" src="BlogSiteJQ.js"></script>
+
+</body>
+</html>
