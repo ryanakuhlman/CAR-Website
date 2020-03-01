@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Final Index MovieTime!</title>
+	<meta charset="utf-8">
+	<script src="https://kit.fontawesome.com/3cacc938a7.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="SS-styles.css">
+	<script type="text/javascript" src="SS-app.js"></script>
+</head>
+
+<body>
+
+	<div id="container">
+		
+		<div id="head">
+			
+			<div id="nav-bar">
+				<div id="nav-links">
+					<div id="nav-links-left">
+						<a href="#body" onclick="movieFilter('movie','tv_show')" id="nav-movies" class="opacity-fade"><i class="fas fa-film"></i>MOVIES</a>
+						<a href="#body" onclick="movieFilter('tv_show', 'movie')" id="nav-tv-shows" class="opacity-fade"><i class="fas fa-tv"></i>TV SHOWS</a>
+						<a href="#body" onclick="showAllFilter('tv_show', 'movie')" class="active opacity-fade" id="nav-all"><i class="fas fa-bars"></i>ALL</a>
+					</div>
+
+					<div id="nav-links-right">
+						<div id="nav-settings-dropdown" style="float:right;">
+						<button id="nav-settings-dropdown-button" class="opacity-fade"><i class="fas fa-cog cog-height"></i>SETTINGS</button>
+							<div id="nav-settings-dropdown-content">
+							    <a id="night-mode-button" onclick="nightMode()" class="opacity-fade">Night Mode: ON</a>
+							    <a class="opacity-fade">Link to Google Homepage.</a>
+							    <a class="opacity-fade">Link to Google Homepage.</a>
+							</div>
+
+						</div>
+
+						<form id="search-bar">
+							<i class="fas fa-search"></i>
+							<input onfocus="this.value=''" class="opacity-fade" type="textbox" id="nav-search" autocomplete="off" placeholder="SEARCH" onclick="searchContent()" onkeydown="myFunction()" onkeyup="myFunction()">
+						</form>
+						
+					</div>
+				</div>
+			</div>
+
+			<div id="back-nav-bar"></div>
+
+		</div>
+
+
+
+		<div id="body">
+
+			<div id="search-page">
+				
+				<div id="search-page-content">
+					
+					<p>Type to start searching for content</p>
+
+				</div>
+
+			</div>
+
+			<div id="ant-man-block" class="block-content movie">
+
+				<img class="block-background ant-man-block-background" src="ant-man.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('ant-man-block'),document.getElementById('ant-man-content'))">Ant-Man</button>
+
+			</div>
+
+			<div id="ant-man-content" class="movie-content">
+
+				<img class="content-background ant-man-content-background" src="ant-man.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Ant-Man</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>1h 57m | 2015</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>Forced out of his own company by former protégé Darren Cross, Dr. Hank Pym (Michael Douglas) recruits the talents of Scott Lang (Paul Rudd), a master thief just released from prison. Lang becomes Ant-Man, trained by Pym and armed with a suit that allows him to shrink in size, possess superhuman strength and control an army of ants. The miniature hero must use his new skills to prevent Cross, also known as Yellowjacket, from perfecting the same technology and using it as a weapon for evil.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="ant-man.jpg">
+					<button onclick="showBlock(document.getElementById('ant-man-block'),document.getElementById('ant-man-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="ant-man-and-the-wasp-block" class="block-content movie">
+
+				<img class="block-background ant-man-and-the-wasp-block-background" src="ant-man-and-the-wasp.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('ant-man-and-the-wasp-block'),document.getElementById('ant-man-and-the-wasp-content'))">Ant-Man and the Wasp</button>
+
+			</div>
+
+			<div id="ant-man-and-the-wasp-content" class="movie-content">
+
+				<img class="content-background ant-man-and-the-wasp-content-background" src="ant-man-and-the-wasp.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Ant-Man and the Wasp</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>1h 58m | 2018</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>Scott Lang is grappling with the consequences of his choices as both a superhero and a father. Approached by Hope van Dyne and Dr. Hank Pym, Lang must once again don the Ant-Man suit and fight alongside the Wasp. The urgent mission soon leads to secret revelations from the past as the dynamic duo finds itself in an epic battle against a powerful new enemy.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="ant-man-and-the-wasp.jpg">
+					<button onclick="showBlock(document.getElementById('ant-man-and-the-wasp-block'),document.getElementById('ant-man-and-the-wasp-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="apollo-13-block" class="block-content movie">
+
+				<img class="block-background apollo-13-block-background" src="apollo-13.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('apollo-13-block'),document.getElementById('apollo-13-content'))">Apollo 13</button>
+
+			</div>
+
+			<div id="apollo-13-content" class="movie-content">
+
+				<img class="content-background apollo-13-content-background" src="apollo-13.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Apollo 13</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>2h 20m | 1995</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>This Hollywood drama is based on the events of the Apollo 13 lunar mission, astronauts Jim Lovell (Tom Hanks), Fred Haise (Bill Paxton) and Jack Swigert (Kevin Bacon) find everything going according to plan after leaving Earth's orbit. However, when an oxygen tank explodes, the scheduled moon landing is called off. Subsequent tensions within the crew and numerous technical problems threaten both the astronauts' survival and their safe return to Earth.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="apollo-13.jpg">
+					<button onclick="showBlock(document.getElementById('apollo-13-block'),document.getElementById('apollo-13-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="aquaman-block" class="block-content movie">
+
+				<img class="block-background aquaman-block-background" src="aquaman.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('aquaman-block'),document.getElementById('aquaman-content'))">Aquaman</button>
+
+			</div>
+
+			<div id="aquaman-content" class="movie-content">
+
+				<img class="content-background aquaman-content-background" src="aquaman.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Aquaman</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>2h 23m | 2018</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people -- and then the surface world. Standing in his way is Aquaman, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, Aquaman must retrieve the legendary Trident of Atlan and embrace his destiny as protector of the deep.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="aquaman.jpg">
+					<button onclick="showBlock(document.getElementById('aquaman-block'),document.getElementById('aquaman-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="avengers-block" class="block-content movie">
+
+				<img class="block-background avengers-block-background" src="avengers.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('avengers-block'),document.getElementById('avengers-content'))">The Avengers</button>
+
+			</div>
+
+			<div id="avengers-content" class="movie-content">
+
+				<img class="content-background avengers-content-background" src="avengers.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>The Avengers</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>2h 23m | 2012</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth. Joining Fury's "dream team" are Iron Man (Robert Downey Jr.), Captain America (Chris Evans), the Hulk (Mark Ruffalo), Thor (Chris Hemsworth), the Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner).</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="avengers.jpg">
+					<button onclick="showBlock(document.getElementById('avengers-block'),document.getElementById('avengers-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="avengers-age-of-ultron-block" class="block-content movie">
+
+				<img class="block-background avengers-age-of-ultron-block-background" src="avengers-age-of-ultron.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('avengers-age-of-ultron-block'),document.getElementById('avengers-age-of-ultron-content'))">Avengers: Age of Ultron</button>
+
+			</div>
+
+			<div id="avengers-age-of-ultron-content" class="movie-content">
+
+				<img class="content-background avengers-age-of-ultron-content-background" src="avengers-age-of-ultron.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Avengers: Age of Ultron</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>2h 21m | 2015</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>When Tony Stark (Robert Downey Jr.) jump-starts a dormant peacekeeping program, things go terribly awry, forcing him, Thor (Chris Hemsworth), the Incredible Hulk (Mark Ruffalo) and the rest of the Avengers to reassemble. As the fate of Earth hangs in the balance, the team is put to the ultimate test as they battle Ultron, a technological terror hell-bent on human extinction. Along the way, they encounter two mysterious and powerful newcomers, Pietro and Wanda Maximoff.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="avengers-age-of-ultron.jpg">
+					<button onclick="showBlock(document.getElementById('avengers-age-of-ultron-block'),document.getElementById('avengers-age-of-ultron-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="avengers-endgame-block" class="block-content movie">
+
+				<img class="block-background avengers-endgame-block-background" src="avengers-endgame.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('avengers-endgame-block'),document.getElementById('avengers-endgame-content'))">Avengers: Endgame</button>
+
+			</div>
+
+			<div id="avengers-endgame-content" class="movie-content">
+
+				<img class="content-background avengers-endgame-content-background" src="avengers-endgame.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Avengers: Endgame</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>3h 01m | 2019</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="avengers-endgame.jpg">
+					<button onclick="showBlock(document.getElementById('avengers-endgame-block'),document.getElementById('avengers-endgame-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="avengers-infinity-war-block" class="block-content movie">
+
+				<img class="block-background avengers-infinity-war-block-background" src="avengers-infinity-war.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('avengers-infinity-war-block'),document.getElementById('avengers-infinity-war-content'))">Avengers: Infinity War</button>
+
+			</div>
+
+			<div id="avengers-infinity-war-content" class="movie-content">
+
+				<img class="content-background avengers-infinity-war-content-background" src="avengers-infinity-war.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Avengers: Infinity War</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>2h 29m | 2018</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="avengers-infinity-war.jpg">
+					<button onclick="showBlock(document.getElementById('avengers-infinity-war-block'),document.getElementById('avengers-infinity-war-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="back-to-the-future-block" class="block-content movie">
+
+				<img class="block-background back-to-the-future-block-background" src="back-to-the-future.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('back-to-the-future-block'),document.getElementById('back-to-the-future-content'))">Back to the Future</button>
+
+			</div>
+
+			<div id="back-to-the-future-content" class="movie-content">
+
+				<img class="content-background back-to-the-future-content-background" src="back-to-the-future.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Back to the Future</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>1h 56m | 1985</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>In this 1980s sci-fi classic, small-town California teen Marty McFly (Michael J. Fox) is thrown back into the '50s when an experiment by his eccentric scientist friend Doc Brown (Christopher Lloyd) goes awry. Traveling through time in a modified DeLorean car, Marty encounters young versions of his parents (Crispin Glover, Lea Thompson), and must make sure that they fall in love or he'll cease to exist. Even more dauntingly, Marty has to return to his own time and save the life of Doc Brown.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="back-to-the-future.jpg">
+					<button onclick="showBlock(document.getElementById('back-to-the-future-block'),document.getElementById('back-to-the-future-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="back-to-the-future-part-2-block" class="block-content movie">
+
+				<img class="block-background back-to-the-future-part-2-block-background" src="back-to-the-future-part-2.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('back-to-the-future-part-2-block'),document.getElementById('back-to-the-future-part-2-content'))">Back to the Future: Part II</button>
+
+			</div>
+
+			<div id="back-to-the-future-part-2-content" class="movie-content">
+
+				<img class="content-background back-to-the-future-part-2-content-background" src="back-to-the-future-part-2.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Back to the Future: Part II</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>1h 48m | 1989</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>In this zany sequel, time-traveling duo Marty McFly (Michael J. Fox) and Dr. Emmett Brown (Christopher Lloyd) return from saving Marty's future son from disaster, only to discover their own time transformed. In this nightmarish version of Hill Valley, Marty's father has been murdered and Biff Tannen, Marty's nemesis, has profited. After uncovering the secret to Biff's success -- a sports almanac from the future -- Marty and the Doc embark on a quest to repair the space-time continuum.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="back-to-the-future-part-2.jpg">
+					<button onclick="showBlock(document.getElementById('back-to-the-future-part-2-block'),document.getElementById('back-to-the-future-part-2-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="back-to-the-future-part-3-block" class="block-content movie">
+
+				<img class="block-background back-to-the-future-part-3-block-background" src="back-to-the-future-part-3.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('back-to-the-future-part-3-block'),document.getElementById('back-to-the-future-part-3-content'))">Back to the Future: Part III</button>
+
+			</div>
+
+			<div id="back-to-the-future-part-3-content" class="movie-content">
+
+				<img class="content-background back-to-the-future-part-3-content-background" src="back-to-the-future-part-3.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Back to the Future: Part III</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>1h 58m | 1990</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>In this final chapter, Marty McFly (Michael J. Fox) obtains a 70-year-old message from the time-traveling Dr. Emmett Brown (Christopher Lloyd), in which he informs Marty that he has retired to a small town in the Old West. Marty then finds out that the Doc was murdered shortly after sending the letter. In order to save his friend, Marty will have to travel back in time, disentangle a lovestruck Doc from a local schoolmarm, and repair the DeLorean -- all while avoiding a posse of gunslingers.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="back-to-the-future-part-3.jpg">
+					<button onclick="showBlock(document.getElementById('back-to-the-future-part-3-block'),document.getElementById('back-to-the-future-part-3-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="batman-begins-block" class="block-content movie">
+
+				<img class="block-background batman-begins-block-background" src="batman-begins.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('batman-begins-block'),document.getElementById('batman-begins-content'))">Batman Begins</button>
+
+			</div>
+
+			<div id="batman-begins-content" class="movie-content">
+
+				<img class="content-background batman-begins-content-background" src="batman-begins.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Batman Begins</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>2h 20m | 2005</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>A young Bruce Wayne (Christian Bale) travels to the Far East, where he's trained in the martial arts by Henri Ducard (Liam Neeson), a member of the mysterious League of Shadows. When Ducard reveals the League's true purpose -- the complete destruction of Gotham City -- Wayne returns to Gotham intent on cleaning up the city without resorting to murder. With the help of Alfred (Michael Caine), his loyal butler, and Lucius Fox (Morgan Freeman), a tech expert at Wayne Enterprises, Batman is born.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="batman-begins.jpg">
+					<button onclick="showBlock(document.getElementById('batman-begins-block'),document.getElementById('batman-begins-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="batman-v-superman-dawn-of-justice-block" class="block-content movie">
+
+				<img class="block-background batman-v-superman-dawn-of-justice-block-background" src="batman-v-superman-dawn-of-justice.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('batman-v-superman-dawn-of-justice-block'),document.getElementById('batman-v-superman-dawn-of-justice-content'))">Batman v Superman: Dawn of Justice</button>
+
+			</div>
+
+			<div id="batman-v-superman-dawn-of-justice-content" class="movie-content">
+
+				<img class="content-background batman-v-superman-dawn-of-justice-content-background" src="batman-v-superman-dawn-of-justice.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Batman v Superman: Dawn of Justice</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>2h 31m | 2016</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>It's been nearly two years since Superman's (Henry Cavill) colossal battle with Zod (Michael Shannon) devastated the city of Metropolis. The loss of life and collateral damage left many feeling angry and helpless, including crime-fighting billionaire Bruce Wayne (Ben Affleck). Convinced that Superman is now a threat to humanity, Batman embarks on a personal vendetta to end his reign on Earth, while the conniving Lex Luthor (Jesse Eisenberg) launches his own crusade against the Man of Steel.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="batman-v-superman-dawn-of-justice.jpg">
+					<button onclick="showBlock(document.getElementById('batman-v-superman-dawn-of-justice-block'),document.getElementById('batman-v-superman-dawn-of-justice-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="friends-block" class="block-content tv_show">
+
+				<img class="block-background friends-block-background" src="friends.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('friends-block'),document.getElementById('friends-content'))">Friends</button>
+
+			</div>
+
+			<div id="friends-content" class="movie-content">
+
+				<img class="content-background friends-content-background" src="friends.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Friends</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>10 seasons | 1994</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>Rachel Green, Ross Geller, Monica Geller, Joey Tribbiani, Chandler Bing and Phoebe Buffay are six 20 something year-olds, living off of one another in the heart of New York City. Over the course of ten years, this average group of buddies goes through massive mayhem, family trouble, past and future romances, fights, laughs, tears and surprises as they learn what it really means to be a friend.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+					<div class="movie-episodes-button">
+						<button class="opacity-fade">
+							<i class="fas fa-bars" aria-hidden="true"></i>EPISODES</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="friends.jpg">
+					<button onclick="showBlock(document.getElementById('friends-block'),document.getElementById('friends-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="futurama-block" class="block-content tv_show">
+
+				<img class="block-background futurama-block-background" src="futurama.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('futurama-block'),document.getElementById('futurama-content'))">Futurama</button>
+
+			</div>
+
+			<div id="futurama-content" class="movie-content">
+
+				<img class="content-background futurama-content-background" src="futurama.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>Futurama</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>7 seasons | 1999</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>Accidentally frozen, pizza-deliverer Fry wakes up 1,000 years in the future. He is taken in by his sole descendant, an elderly and addled scientist who owns a small cargo delivery service. Among the other crew members are Capt. Leela, accountant Hermes, intern Amy, obnoxious robot Bender and lobsterlike moocher "Dr." Zoidberg.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+					<div class="movie-episodes-button">
+						<button class="opacity-fade">
+							<i class="fas fa-bars" aria-hidden="true"></i>EPISODES</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="futurama.jpg">
+					<button onclick="showBlock(document.getElementById('futurama-block'),document.getElementById('futurama-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+			<div id="m2001-a-space-odyssey-block" class="block-content movie">
+
+				<img class="block-background m2001-a-space-odyssey-block-background" src="2001-a-space-odyssey.jpg">
+
+				<button class="showContent" onclick="showContent(document.getElementById('m2001-a-space-odyssey-block'),document.getElementById('m2001-a-space-odyssey-content'))">2001: A Space Odyssey</button>
+
+			</div>
+
+			<div id="m2001-a-space-odyssey-content" class="movie-content">
+
+				<img class="content-background m2001-a-space-odyssey-content-background" src="2001-a-space-odyssey.jpg">
+
+				<div class="movie-content-container">
+					
+					<div class="movie-details">
+					
+					<div class="main-movie-desc">
+						
+						<div class="movie-title">
+							<h2>2001: A Space Odyssey</h2>
+						</div>
+
+						<div class="movie-year">
+							<p>2h 44m | 1968</p>
+						</div>
+
+						<div class="movie-desc">
+							<p>An imposing black structure provides a connection between the past and the future in this enigmatic adaptation of a short story by revered sci-fi author Arthur C. Clarke. When Dr. Dave Bowman (Keir Dullea) and other astronauts are sent on a mysterious mission, their ship's computer system, HAL, begins to display increasingly strange behavior, leading up to a tense showdown between man and machine that results in a mind-bending trek through space and time.</p>
+						</div>
+
+					</div>
+
+					<div class="movie-play-button">
+						<button class="opacity-fade"><i class="fas fa-play"></i></i>PLAY</button>
+					</div>
+
+				</div>
+
+				<div class="movie-poster">
+					<img src="2001-a-space-odyssey.jpg">
+					<button onclick="showBlock(document.getElementById('m2001-a-space-odyssey-block'),document.getElementById('m2001-a-space-odyssey-content'))"><i class="fas fa-times opacity-fade"></i></button>
+				</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>

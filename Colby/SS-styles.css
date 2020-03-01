@@ -1,0 +1,675 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
+
+/* Body Properties */
+body {
+	overflow-y: scroll;
+	background-color:#1e2126;
+	font-family: 'Montserrat', sans-serif;
+	margin:0;
+}
+
+#body {
+	margin:0 20px 0;
+	padding-top:100px;
+}
+
+/* Block and Content Properties */
+.display-none {
+	display:none;
+}
+.display-block {
+	display:block;
+}
+
+.block-content {
+	display:block;
+	background-color:#121417;
+	width:100%;
+	height:89px;
+	margin:0 auto;
+	margin-bottom:20px;
+	max-width:1420px;
+	min-width:861px;
+	position:relative;
+	overflow:hidden;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,1);
+}
+
+.block-content:hover > .block-background {
+	transition: all 0.3s ease-out;
+	filter:blur(3px) contrast(50%);
+}
+.block-content img.block-background {
+	transition: all 0.3s ease-in-out;
+	filter:blur(1px) contrast(100%);
+	margin:auto;
+	width:1420px;
+	opacity:0.3;
+	position:absolute;
+}
+
+.showContent {
+	text-align:left;
+	outline:none;
+	background-color:transparent;
+	font-family:'Montserrat', sans-serif;
+	font-size:40px;
+	padding:20px;
+	border:none;
+	width:100%;
+	color:white;
+	font-weight:500;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	position:absolute;
+	left:0;
+	cursor:pointer;
+}
+
+/* Opacity Animation */
+.opacity-fade {
+	opacity:1;
+	transition: opacity .2s ease-in-out;
+}
+
+.opacity-fade:hover {
+	opacity:0.7;
+}
+
+
+/* Movie Box Content Properties */
+img.content-background {
+	opacity:0.3;
+	position:absolute;
+	filter:blur(3px) contrast(40%);
+	width:1420px;
+	margin:auto;
+}
+.movie-content {
+	background-color:#121417;
+	display:none;
+	height:auto;
+	margin:0 auto;
+	margin-bottom:40px;
+	max-width:1420px;
+	min-width:901px;
+	overflow:hidden;
+	width:auto;
+	position:relative;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,1);
+	z-index:0;
+}
+.movie-content-container {
+	display:flex;
+	padding:20px 20px;
+}
+
+/* Movie Poster Image Properties */
+.movie-poster {
+	max-height:450px;
+	width:auto;
+	position:relative;
+	float:right;
+}
+.movie-poster img {
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,1);
+	display:inline-block;
+	height:450px;
+	padding:0;
+	width:300px;
+}
+.movie-poster button {
+	background-color:transparent;
+	font-size:30px;
+	border:none;
+	position:absolute;
+	text-shadow: 0px 0px 5px #000000;
+	top:20px;
+	color:white;
+	right:20px;
+	cursor:pointer;
+	outline:none;
+}
+.movie-poster button:hover {
+	opacity:0.7;
+}
+
+/* Movie Details Properties */
+.movie-details {
+	background-color:transparent;
+	flex-grow: 1;
+	height:450px;
+	max-height:450px;
+	min-width:541px;
+	overflow:auto;
+	margin:0;
+	margin-right:20px;
+	position:relative;
+	width:auto;
+}
+
+/* Movie Title Properties */
+.movie-title {
+	background-color:transparent;
+}
+
+.movie-title h2 {
+	color:#fff;
+	font-size:40px;
+	font-weight:500;
+	margin:0;
+	max-height:147px;
+	overflow:auto;
+	padding-bottom:20px;
+	width:100%;
+	cursor:default;
+}
+
+/* Movie Description Properties */
+.main-movie-desc {
+	max-height:359px;
+	height:100%;
+	overflow:auto;
+}
+.movie-desc {
+	background-color:transparent;
+	position:relative;
+	top:0px;
+}
+
+.movie-desc p {
+	color:#fff;
+	margin:0;
+	height:auto;
+	overflow:auto;
+	text-align:left;
+}
+
+/* Movie Year and Runtime Properties */
+.movie-year {
+	display:block;
+	background-color:transparent;
+}
+
+.movie-year p {
+	margin:0;
+	color:#fff;
+	padding:0;
+	padding-bottom:19px;
+	text-align:left;
+	text-shadow: 2px 2px 8px #000000;
+}
+
+/* Movie Button Properties */
+.movie-buttons {
+	background-color:transparent;
+	width:100%;
+	height:91px;
+	position:absolute;
+	bottom:0;
+}
+
+.movie-play-button {
+	background-color:transparent;
+}
+
+.movie-play-button button {
+	background-color:transparent;
+	border:3px white solid;
+	border-radius:25px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,1);
+	color:white;
+	cursor:pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-size:24px;
+	font-weight: 400;
+	margin:20px;
+	opacity:1;
+	padding:8px 35px;
+	letter-spacing:3px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	outline:none;
+}
+
+.movie-play-button button:hover {
+	opacity:0.7;
+}
+
+.movie-episodes-button {
+	background-color:transparent;
+	font-weight: bold;
+	padding:20px 24.5px 20px;
+}
+
+.movie-episodes-button button {
+	background-color: transparent;
+	border:3px white solid;
+	border-radius:25px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,1);
+	color:white;
+	cursor:pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-size:24px;
+	margin:20px;
+	font-weight:400;
+	opacity:1;
+	padding:8px 35px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	letter-spacing:3px;
+	outline:none;
+	transition: all 0.2s ease-in-out;
+}
+
+.movie-episodes-button button:hover {
+	opacity:0.7;
+}
+
+/* Movie Episodes Content */
+.movie-episodes-container {
+	margin:auto;
+	max-width:1420px;
+	min-width:861px;
+	position:relative;
+}
+.movie-episodes-content {
+	display:none;
+	width:100%;
+	max-width:1420px;
+	min-width:861px;
+	height:800px;
+	transition: height 0.2s ease-in-out;
+	float:left;
+	margin-bottom:40px;
+	margin-top:-40px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,1);
+	overflow:auto;
+	z-index:0;
+}
+
+/* Seasons List */
+.seasons-list {
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,1);
+	background-color:#292c33;
+	height:800px;
+	overflow:auto;
+	width:auto;
+	position:absolute;
+}
+.seasons-list ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.seasons-list ul button {
+	font-family: 'Montserrat', sans-serif;
+	font-size:24px;
+	margin:20px;
+	font-weight:400;
+	opacity:1;
+	padding:0px 35px;
+	letter-spacing:3px;
+	background-color:transparent;
+	cursor: pointer;
+	transition:all 0.2s ease-in-out;
+	border:none;
+	outline:none;
+	color:white;
+}
+.seasons-list ul button:hover {
+	opacity:0.7;
+}
+
+/* Seasons Content */
+.seasons-content {
+	height:auto;
+	margin-left:258.594px;
+	padding:20px;
+	padding-bottom:0;
+}
+
+/* Episode Content */
+.episode-content {
+	position:relative;
+	min-height:90px;
+	height:auto;
+	margin-bottom:20px;
+	width:100%;
+
+}
+/* Episode Thumbnail */
+.episode-thumbnail {
+	margin-right:20px;
+	margin-bottom:20px;
+	float:left;
+	height:90px;
+	width:160px;
+}
+.episode-thumbnail img {
+	box-shadow:0px 4px 8px 0px rgba(0,0,0,1);
+	width:160px;
+	height:90px;
+}
+/* Episode Title */
+div.episode-title-content {
+	display:flex; 
+	align-items: center;
+	height:90px;
+	margin-bottom:20px;
+}
+p.episode-title {
+	max-height:90px;
+	overflow:auto;
+	display:block;
+	color:white;
+	margin:0;
+	font-size:20px;
+	text-align:left;
+}
+
+/* Episode Description */
+.episode-description {
+	height:auto;
+	margin-bottom:20px;
+}
+.episode-description img {
+	width:160px;
+	height:90px;
+	background-color:green;
+}
+.episode-description p {
+	font-size:17px;
+	display:block;
+	margin:0;
+	color:white;
+}
+
+/* Navigation Bar */
+#back-nav-bar {
+	background-color:#292c33;
+	margin-bottom:20px;
+	margin:auto;
+	height:80px;
+	position:fixed;
+	left:50%;
+	transform: translate(-50%, -50%);
+	top:40px;
+	width:100%;
+	z-index:0;
+	transition: top 0.3s;
+}
+
+#nav-bar {
+	transition: top 0.3s;
+	background-color:#292c33;
+	margin-bottom:20px;
+	margin:auto;
+	height:80px;
+	position:fixed;
+	left:50%;
+	transform: translate(-50%, -50%);
+	top:40px;
+	width:100%;
+	z-index:1;
+	max-width:1460px;
+	min-width:861px;
+}
+
+/* Navigation Search Bar */
+#search-page {
+	background-color:#121417;
+	display:none;
+	height:89px;
+	max-height:89px;
+	margin:0 auto;
+	margin-bottom:40px;
+	max-width:1420px;
+	min-width:861px;
+	overflow:hidden;
+	width:auto;
+	position:relative;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,1);
+}
+#search-page p {
+	margin:32px 0;
+	background-color: #121417;
+	color:#fff;
+	font-weight:500px;
+	font-size:21px;
+	text-align:center;
+}
+
+/* Navation Bar Links */
+#nav-links .active {
+	border-top:5px white solid;
+	padding-top:25px;
+}
+#nav-links a {
+	height:80px;
+	border:none;
+	box-sizing: border-box;
+	background-color:transparent;
+	color:#fff;
+	cursor:pointer;
+	font-size:17px;
+	font-weight:500;
+	opacity:1;
+	padding:30px 20px;
+	text-decoration:none;
+}
+
+#nav-links a:hover {
+	opacity:0.7;
+}
+
+::selection {
+	background-color: transparent;
+}
+
+img {
+	pointer-events: none;
+}
+
+#search-bar {
+	margin: 10px 0;
+	float:right;
+	border:2px solid white;
+	border-radius:30px;
+	color:#fff;
+	height:auto;
+	display:flex;
+	padding:16px 16px;
+	background-color: transparent;
+	max-width:1000px;
+}
+#search-bar i {
+	font-size:20px;
+	height:auto;
+	float:left;
+	margin:1px 0;
+	margin-right:7px;
+}
+
+#nav-links input#nav-search {
+	float:right;
+	outline:none;
+	background-color:transparent;
+	flex-grow:1;
+	width:100%;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+	font-size:17px;
+	font-weight:500;
+	font-family:'Roboto', sans-serif;
+	opacity:1;
+	transition:all 0.2s ease-in-out;
+}
+
+#nav-links button:hover {
+	opacity:0.7;
+}
+
+#nav-links-left a {
+	float:left;
+	padding-right:0px;
+	padding-left:0px;
+	margin-left:20px;
+	margin-right:20px;
+}
+#nav-links-left a#nav-movies {
+	padding-left:0;
+}
+
+#nav-links-right a {
+	float:right;
+	margin-right:60px;
+}
+
+/* Navigation Bar Settings Dropdown */
+#nav-settings-dropdown {
+	position:relative;
+	display:inline-block;
+}
+
+#nav-settings-dropdown:hover #nav-settings-dropdown-content {
+	opacity:1;
+}
+
+#nav-settings-dropdown:hover #nav-settings-dropdown-content {
+	display:inline-block;
+}
+
+button#nav-settings-dropdown-button {
+	background-color:transparent;
+	border:none;
+	color:#fff;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-size:17px;
+	font-weight:500;
+	margin-right:0px;
+	opacity:1;
+	padding:30px 20px;
+	transition:all 0.2s ease-in-out;
+}
+
+button#nav-settings-dropdown-button:hover {
+	opacity:0.7;
+}
+
+#nav-settings-dropdown-content {
+	background-color:#292c33;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+	display:none;
+	height:auto;
+ 	position:absolute;
+ 	right:0px;
+	top:80px;
+}
+
+#nav-settings-dropdown-content a {
+	color:white;
+	float:right;
+	display:block;
+	margin-right:0px;
+	width:auto;
+	max-width:800px;
+	opacity:1;
+	height:auto;
+	padding:30px 20px;
+	text-decoration:none;
+}
+
+#nav-settings-dropdown-content a:hover {
+	opacity:0.7;
+}
+
+/* Icon Properties */
+i {
+	margin-right:8px;
+}
+
+/* Movie Poster Positioning */
+.ant-man-block-background, .ant-man-content-background {
+	position:absolute;
+	right:0;
+	top:-275px;
+}
+.ant-man-and-the-wasp-block-background, .ant-man-and-the-wasp-content-background {
+	position:absolute;
+	top:-250px;
+	right:0;
+}
+.apollo-13-block-background, .apollo-13-content-background {
+	position:absolute;
+	top:-400px;
+	right:0;
+}
+.aquaman-block-background, .aquaman-content-background {
+	position:absolute;
+	right:0;
+	top:-300px;
+}
+.avengers-block-background, .avengers-content-background {
+	position:absolute;
+	left:0;
+	top:-500px;
+}
+.avengers-age-of-ultron-block-background, .avengers-age-of-ultron-content-background {
+	position:absolute;
+	right:0;
+	top:-400px;
+}
+.avengers-endgame-block-background, .avengers-endgame-content-background {
+	position:absolute;
+	right:0;
+	top:-700px;
+}
+.avengers-infinity-war-block-background, .avengers-infinity-war-content-background {
+	position:absolute;
+	right:0;
+	top:-300px;
+}
+.back-to-the-future-block-background, .back-to-the-future-content-background {
+	position:absolute;
+	right:0;
+	top:-500px;
+}
+.back-to-the-future-part-2-block-background, .back-to-the-future-part-2-content-background {
+	position:absolute;
+	right:0;
+	top:-375px;
+}
+.back-to-the-future-part-3-block-background, .back-to-the-future-part-3-content-background {
+	position:absolute;
+	right:0;
+	top:-400px;
+}
+.batman-begins-block-background, .batman-begins-content-background {
+	position:absolute;
+	right:0;
+	top:-750px;
+}
+.batman-v-superman-dawn-of-justice-block-background, .batman-v-superman-dawn-of-justice-content-background {
+	position:absolute;
+	top:-250px;
+}
+.friends-block-background, .friends-content-background {
+	position:absolute;
+	top:-350px;
+}
+.futurama-block-background, .futurama-content-background {
+	position:absolute;
+	top:-200px;
+}
+.m2001-a-space-odyssey-block-background, .m2001-a-space-odyssey-content-background {
+	position:absolute;
+	right:0;
+	top:-400px;
+}
